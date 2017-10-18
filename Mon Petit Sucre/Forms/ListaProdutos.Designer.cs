@@ -89,7 +89,7 @@
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.Location = new System.Drawing.Point(77, 442);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 44);
+            this.btnAdd.Size = new System.Drawing.Size(75, 56);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
@@ -98,7 +98,7 @@
             this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
             this.btnAlterar.Location = new System.Drawing.Point(310, 442);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(75, 44);
+            this.btnAlterar.Size = new System.Drawing.Size(75, 56);
             this.btnAlterar.TabIndex = 2;
             this.btnAlterar.UseVisualStyleBackColor = true;
             // 
@@ -107,7 +107,7 @@
             this.btnDeletar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletar.Image")));
             this.btnDeletar.Location = new System.Drawing.Point(558, 442);
             this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(75, 44);
+            this.btnDeletar.Size = new System.Drawing.Size(75, 56);
             this.btnDeletar.TabIndex = 3;
             this.btnDeletar.UseVisualStyleBackColor = true;
             // 
@@ -116,14 +116,14 @@
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.Location = new System.Drawing.Point(749, 442);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(75, 44);
+            this.btnVoltar.Size = new System.Drawing.Size(75, 56);
             this.btnVoltar.TabIndex = 4;
             this.btnVoltar.UseVisualStyleBackColor = true;
             // 
             // lblAdd
             // 
             this.lblAdd.AutoSize = true;
-            this.lblAdd.Location = new System.Drawing.Point(49, 498);
+            this.lblAdd.Location = new System.Drawing.Point(48, 512);
             this.lblAdd.Name = "lblAdd";
             this.lblAdd.Size = new System.Drawing.Size(135, 20);
             this.lblAdd.TabIndex = 5;
@@ -132,7 +132,7 @@
             // lblAlterar
             // 
             this.lblAlterar.AutoSize = true;
-            this.lblAlterar.Location = new System.Drawing.Point(283, 498);
+            this.lblAlterar.Location = new System.Drawing.Point(286, 512);
             this.lblAlterar.Name = "lblAlterar";
             this.lblAlterar.Size = new System.Drawing.Size(131, 20);
             this.lblAlterar.TabIndex = 6;
@@ -141,7 +141,7 @@
             // lblDeletar
             // 
             this.lblDeletar.AutoSize = true;
-            this.lblDeletar.Location = new System.Drawing.Point(539, 498);
+            this.lblDeletar.Location = new System.Drawing.Point(542, 512);
             this.lblDeletar.Name = "lblDeletar";
             this.lblDeletar.Size = new System.Drawing.Size(115, 20);
             this.lblDeletar.TabIndex = 7;
@@ -150,7 +150,7 @@
             // lblVoltar
             // 
             this.lblVoltar.AutoSize = true;
-            this.lblVoltar.Location = new System.Drawing.Point(762, 498);
+            this.lblVoltar.Location = new System.Drawing.Point(765, 512);
             this.lblVoltar.Name = "lblVoltar";
             this.lblVoltar.Size = new System.Drawing.Size(51, 20);
             this.lblVoltar.TabIndex = 8;
@@ -160,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 532);
+            this.ClientSize = new System.Drawing.Size(893, 559);
             this.Controls.Add(this.lblVoltar);
             this.Controls.Add(this.lblDeletar);
             this.Controls.Add(this.lblAlterar);

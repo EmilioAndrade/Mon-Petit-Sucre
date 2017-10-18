@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Inicial));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.produtoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingredientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingredientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarIngredientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -63,6 +63,16 @@
             this.produtoToolStripMenuItem.Text = "Produto";
             this.produtoToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // listaDeProdutosToolStripMenuItem
+            // 
+            this.listaDeProdutosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("listaDeProdutosToolStripMenuItem.Image")));
+            this.listaDeProdutosToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.listaDeProdutosToolStripMenuItem.Name = "listaDeProdutosToolStripMenuItem";
+            this.listaDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(247, 30);
+            this.listaDeProdutosToolStripMenuItem.Text = "Visualizar Produtos";
+            this.listaDeProdutosToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.listaDeProdutosToolStripMenuItem.Click += new System.EventHandler(this.listaDeProdutosToolStripMenuItem_Click);
+            // 
             // ingredientesToolStripMenuItem
             // 
             this.ingredientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -73,15 +83,6 @@
             this.ingredientesToolStripMenuItem.Size = new System.Drawing.Size(146, 29);
             this.ingredientesToolStripMenuItem.Text = "Ingredientes";
             this.ingredientesToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // listaDeProdutosToolStripMenuItem
-            // 
-            this.listaDeProdutosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("listaDeProdutosToolStripMenuItem.Image")));
-            this.listaDeProdutosToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.listaDeProdutosToolStripMenuItem.Name = "listaDeProdutosToolStripMenuItem";
-            this.listaDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(247, 30);
-            this.listaDeProdutosToolStripMenuItem.Text = "Visualizar Produtos";
-            this.listaDeProdutosToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // visualizarIngredientesToolStripMenuItem
             // 
@@ -116,6 +117,7 @@
             this.Name = "Frm_Inicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mon Petit Sucré";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_Inicial_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
