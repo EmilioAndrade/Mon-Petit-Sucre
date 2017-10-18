@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProduto));
             this.groupBoxProduto = new System.Windows.Forms.GroupBox();
+            this.richTextBoxDescricao = new System.Windows.Forms.RichTextBox();
+            this.comboBoxStatus = new System.Windows.Forms.ComboBox();
+            this.textBoxPreco = new System.Windows.Forms.TextBox();
+            this.textBoxNomeProduto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblPreco = new System.Windows.Forms.Label();
@@ -38,10 +42,6 @@
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lblSalvar = new System.Windows.Forms.Label();
             this.lblVoltar = new System.Windows.Forms.Label();
-            this.textBoxNomeProduto = new System.Windows.Forms.TextBox();
-            this.textBoxPreco = new System.Windows.Forms.TextBox();
-            this.comboBoxStatus = new System.Windows.Forms.ComboBox();
-            this.richTextBoxDescricao = new System.Windows.Forms.RichTextBox();
             this.groupBoxProduto.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,40 @@
             this.groupBoxProduto.TabIndex = 0;
             this.groupBoxProduto.TabStop = false;
             this.groupBoxProduto.Text = "Informações do Produto";
+            // 
+            // richTextBoxDescricao
+            // 
+            this.richTextBoxDescricao.Location = new System.Drawing.Point(127, 203);
+            this.richTextBoxDescricao.Name = "richTextBoxDescricao";
+            this.richTextBoxDescricao.Size = new System.Drawing.Size(236, 105);
+            this.richTextBoxDescricao.TabIndex = 7;
+            this.richTextBoxDescricao.Text = "";
+            // 
+            // comboBoxStatus
+            // 
+            this.comboBoxStatus.FormattingEnabled = true;
+            this.comboBoxStatus.Items.AddRange(new object[] {
+            "Em Produção",
+            "Sem Produção",
+            "Sob Encomenda"});
+            this.comboBoxStatus.Location = new System.Drawing.Point(127, 149);
+            this.comboBoxStatus.Name = "comboBoxStatus";
+            this.comboBoxStatus.Size = new System.Drawing.Size(142, 28);
+            this.comboBoxStatus.TabIndex = 6;
+            // 
+            // textBoxPreco
+            // 
+            this.textBoxPreco.Location = new System.Drawing.Point(127, 97);
+            this.textBoxPreco.Name = "textBoxPreco";
+            this.textBoxPreco.Size = new System.Drawing.Size(142, 26);
+            this.textBoxPreco.TabIndex = 5;
+            // 
+            // textBoxNomeProduto
+            // 
+            this.textBoxNomeProduto.Location = new System.Drawing.Point(127, 48);
+            this.textBoxNomeProduto.Name = "textBoxNomeProduto";
+            this.textBoxNomeProduto.Size = new System.Drawing.Size(236, 26);
+            this.textBoxNomeProduto.TabIndex = 4;
             // 
             // label4
             // 
@@ -106,6 +140,7 @@
             this.btnSalvar.Size = new System.Drawing.Size(75, 46);
             this.btnSalvar.TabIndex = 1;
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnVoltar
             // 
@@ -115,6 +150,7 @@
             this.btnVoltar.Size = new System.Drawing.Size(75, 46);
             this.btnVoltar.TabIndex = 2;
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // lblSalvar
             // 
@@ -133,40 +169,6 @@
             this.lblVoltar.Size = new System.Drawing.Size(51, 20);
             this.lblVoltar.TabIndex = 4;
             this.lblVoltar.Text = "Voltar";
-            // 
-            // textBoxNomeProduto
-            // 
-            this.textBoxNomeProduto.Location = new System.Drawing.Point(127, 48);
-            this.textBoxNomeProduto.Name = "textBoxNomeProduto";
-            this.textBoxNomeProduto.Size = new System.Drawing.Size(236, 26);
-            this.textBoxNomeProduto.TabIndex = 4;
-            // 
-            // textBoxPreco
-            // 
-            this.textBoxPreco.Location = new System.Drawing.Point(127, 97);
-            this.textBoxPreco.Name = "textBoxPreco";
-            this.textBoxPreco.Size = new System.Drawing.Size(142, 26);
-            this.textBoxPreco.TabIndex = 5;
-            // 
-            // comboBoxStatus
-            // 
-            this.comboBoxStatus.FormattingEnabled = true;
-            this.comboBoxStatus.Items.AddRange(new object[] {
-            "Em Produção",
-            "Sem Produção",
-            "Sob Encomenda"});
-            this.comboBoxStatus.Location = new System.Drawing.Point(127, 149);
-            this.comboBoxStatus.Name = "comboBoxStatus";
-            this.comboBoxStatus.Size = new System.Drawing.Size(142, 28);
-            this.comboBoxStatus.TabIndex = 6;
-            // 
-            // richTextBoxDescricao
-            // 
-            this.richTextBoxDescricao.Location = new System.Drawing.Point(127, 203);
-            this.richTextBoxDescricao.Name = "richTextBoxDescricao";
-            this.richTextBoxDescricao.Size = new System.Drawing.Size(236, 105);
-            this.richTextBoxDescricao.TabIndex = 7;
-            this.richTextBoxDescricao.Text = "";
             // 
             // FrmProduto
             // 

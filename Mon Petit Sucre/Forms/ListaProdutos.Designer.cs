@@ -32,8 +32,8 @@
             this.listViewProdutos = new System.Windows.Forms.ListView();
             this.columnProduto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnDescricao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnPreco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnDeletar = new System.Windows.Forms.Button();
@@ -72,17 +72,17 @@
             this.columnDescricao.Text = "Descrição";
             this.columnDescricao.Width = 300;
             // 
-            // columnStatus
-            // 
-            this.columnStatus.DisplayIndex = 2;
-            this.columnStatus.Text = "Status";
-            this.columnStatus.Width = 100;
-            // 
             // columnPreco
             // 
             this.columnPreco.DisplayIndex = 3;
             this.columnPreco.Text = "Preço";
             this.columnPreco.Width = 120;
+            // 
+            // columnStatus
+            // 
+            this.columnStatus.DisplayIndex = 2;
+            this.columnStatus.Text = "Status";
+            this.columnStatus.Width = 100;
             // 
             // btnAdd
             // 
@@ -92,6 +92,7 @@
             this.btnAdd.Size = new System.Drawing.Size(75, 56);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnAlterar
             // 
@@ -101,6 +102,7 @@
             this.btnAlterar.Size = new System.Drawing.Size(75, 56);
             this.btnAlterar.TabIndex = 2;
             this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnDeletar
             // 
@@ -110,6 +112,7 @@
             this.btnDeletar.Size = new System.Drawing.Size(75, 56);
             this.btnDeletar.TabIndex = 3;
             this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // btnVoltar
             // 
@@ -119,6 +122,7 @@
             this.btnVoltar.Size = new System.Drawing.Size(75, 56);
             this.btnVoltar.TabIndex = 4;
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // lblAdd
             // 

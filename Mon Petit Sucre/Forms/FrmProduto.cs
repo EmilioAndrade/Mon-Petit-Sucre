@@ -16,5 +16,15 @@ namespace Mon_Petit_Sucre.Forms
         {
             InitializeComponent();
         }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
