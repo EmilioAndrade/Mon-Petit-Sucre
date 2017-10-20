@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contexts\GenericContext.cs" />
+    <Compile Include="Contexts\MonPetitSucreContext.cs" />
+    <Compile Include="Entities\GenericEntity.cs" />
+    <Compile Include="Entities\IngredienteEntity.cs" />
+    <Compile Include="Entities\ProdutoEntity.cs" />
+    <Compile Include="Entities\VendaEntity.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,8 +76,10 @@
     <Compile Include="Forms\ListaProdutos.Designer.cs">
       <DependentUpon>ListaProdutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\GenericModel.cs" />
     <Compile Include="Models\Ingrediente.cs" />
     <Compile Include="Models\Produto.cs" />
+    <Compile Include="Models\Venda.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -108,7 +116,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Entities\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

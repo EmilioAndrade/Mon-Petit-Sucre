@@ -16,6 +16,7 @@ namespace Mon_Petit_Sucre
         public Frm_Inicial()
         {
             InitializeComponent();
+            DisplayHourAndDate();
         }
 
         private void Frm_Inicial_FormClosing(object sender, FormClosingEventArgs e)
@@ -31,6 +32,11 @@ namespace Mon_Petit_Sucre
             ListaProdutos frmListaProd = new ListaProdutos();
             frmListaProd.ShowDialog();
             frmListaProd.Dispose();
+        }
+
+        private void DisplayHourAndDate()
+        {
+            toolStripStatusLabelInfos.Text = DateTime.Now.ToShortDateString();
         }
     }
 }

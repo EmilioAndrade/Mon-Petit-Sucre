@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Mon_Petit_Sucre.Models
 {
-    public class Produto
+    public class Produto : GenericModel
     {
-        public long Id { get; set; }
+        [Key]
+        public long IdProduto { get; set; }
 
         public string Nome { get; set; }
 

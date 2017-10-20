@@ -35,7 +35,11 @@
             this.ingredientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarIngredientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualizarVendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabelInfos = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -95,6 +99,8 @@
             // 
             // vendasToolStripMenuItem
             // 
+            this.vendasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.visualizarVendasToolStripMenuItem});
             this.vendasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("vendasToolStripMenuItem.Image")));
             this.vendasToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
@@ -102,12 +108,40 @@
             this.vendasToolStripMenuItem.Text = "Vendas";
             this.vendasToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // visualizarVendasToolStripMenuItem
+            // 
+            this.visualizarVendasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("visualizarVendasToolStripMenuItem.Image")));
+            this.visualizarVendasToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.visualizarVendasToolStripMenuItem.Name = "visualizarVendasToolStripMenuItem";
+            this.visualizarVendasToolStripMenuItem.Size = new System.Drawing.Size(231, 30);
+            this.visualizarVendasToolStripMenuItem.Text = "Visualizar Vendas";
+            this.visualizarVendasToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabelInfos});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 484);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(844, 30);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabelInfos
+            // 
+            this.toolStripStatusLabelInfos.Enabled = false;
+            this.toolStripStatusLabelInfos.Name = "toolStripStatusLabelInfos";
+            this.toolStripStatusLabelInfos.Size = new System.Drawing.Size(209, 25);
+            this.toolStripStatusLabelInfos.Text = "toolStripStatusLabelInfos";
+            // 
             // Frm_Inicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(844, 514);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -120,6 +154,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_Inicial_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,6 +169,9 @@
         private System.Windows.Forms.ToolStripMenuItem listaDeProdutosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visualizarIngredientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vendasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visualizarVendasToolStripMenuItem;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelInfos;
     }
 }
 
